@@ -1,0 +1,91 @@
+// 1
+fun ejercicio1() {
+    var edad = 20   // Se usa var porque permite modificar el valor
+    edad = 25		// Ahora sí se puede reasignar
+    println(edad)
+}
+
+// 2
+fun ejercicio2() {
+    val x = 10
+    if (x == 10) {  // Comparación correcta
+        println("Correcto")
+    }
+}
+
+// 3
+fun ejercicio3() {
+    val nombre: String = "Bryan" // Se inicializa la variable obligatoriamente
+    println(nombre)
+}
+
+// 4
+fun ejercicio4() {
+    val nota = 15
+    when {
+        nota >= 11 -> println("Aprobado") // when sin argumento para usar condiciones
+        else -> println("Desaprobado")
+    }
+}
+
+// 5
+fun ejercicio5() {
+    for (i in 1..5) {   // Kotlin usa rangos con .. en lugar de for estilo Java
+        println(i)
+    }
+}
+
+// 6
+fun ejercicio6() {
+    val numero = 5
+    if (numero > 10) {
+        println("Mayor")
+    } else {				// Se usan llaves para mayor claridad y buenas prácticas
+        println("Menor")
+    }
+}
+
+// 7
+fun ejercicio7() {
+    val nota = 18
+    when {
+        nota >= 18 -> println("Excelente")	// Evaluación por condiciones
+        nota >= 11 -> println("Aprobado")
+        else -> println("Desaprobado")
+    }
+}
+
+// 8
+fun saludo(): String {
+    return "Hola" // Se retorna un String porque la función lo exige
+}
+
+// 9
+fun ejercicio9() {
+    mostrar("Bryan") // Se envía el argumento requerido por la función
+}
+
+fun mostrar(nombre: String) {
+    println(nombre)
+}
+
+// 10
+fun ejercicio10() {
+    var x = 10
+    x = 20			// No se vuelve a declarar, solo se reasigna
+    println(x)
+}
+
+// MAIN ÚNICO (OBLIGATORIO)
+fun main() {
+    ejercicio1()
+    ejercicio2()
+    ejercicio3()
+    ejercicio4()
+    ejercicio5()
+    ejercicio6()
+    ejercicio7()
+    println(saludo())
+    ejercicio9()
+    ejercicio10()
+}
